@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This survey is conducted for future improvement of my <strong>portfolio</strong>.</p>
+  <form id="survey-form" method="post">
+  <fieldset>
+   <label id="name-label" for="name">Name<input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
+   <label id="email-label" for="email">Email<input id="email" type="email" name="email" placeholder="Enter your email" required/></label> 
+   <label id="number-label" for="number">Age<span class="clue">(optional)</span><input id="number" type="number" name="number" placeholder="Age" min="13" max="120"></label>
+   </fieldset>
+   <fieldset>
+   <label for="dropdown">
+   Where did you get this survey?
+   <select id="dropdown" name="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Resume Links</option>
+      <option value="2">Social Media Links</option>
+      </select>
+      </label>
+	</fieldset>
+	<fieldset>
+      <legend>Gender</legend>
+      <label for="male"><input type="radio" id="male" name="survey-form" value="male" class="inline" checked/>Male</label>
+      <label for="female"><input type="radio" id="female" name="survey-form" value="female" class="inline"/>Female</label>
+	  </fieldset>
+	  <fieldset>
+	  <legend>Things to improve?</legend>
+      <label><input type="checkbox" value="Design" name="design" class="inline">Design</label>
+      <label><input type="checkbox" value="Back-End" name="back-end" class="inline">Back-End </label>
+	  </fieldset>
+	  <fieldset>
+      <label for="comment">Any Comments or suggestions?<textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+      <label><input id="submit" type="submit"/></label>
+	  </fieldset>
+	  
+    </form>
+
+
+
+
+</body>
+
+  </html>
